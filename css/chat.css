@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#009688 0%,#009688 130px, #d9dbd5 130px, #d9dbd5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+#chat-app{
+    position: relative;
+    width: 1200px;
+    height: calc(100vh - 30px);
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .7), 0 15px 15px 0 rgba(0, 0, 0, .7) ;
+    display: flex;
+}
+/*#chat-app .leftside{
+    width:30%;
+    background-color: pink;
+    position: relative;
+}
+#chat-app .rightside{
+    width: 70%;
+    background-color:rebeccapurple;
+    position: relative;
+}*/
+.container{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+.rightside{
+    background-color:rebeccapurple;/*background image*/
+    position: relative;
+}
+.lefside{
+    background-color:red;
+    position: relative;
+}
+.rightside .contact-info{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template-areas: "section-1 section-2 section-3";
+    grid-auto-rows: 45px;
+}
+.info-icon{
+    grid-area: section-1;
+    grid-auto-columns: 25px;/*size doesn't work*/
+}
+.info-icon .fa-regular{
+    font-size: 25px;
+    padding: 6.5px;
+    margin: 5px;
+    border: hidden;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+.info-name{
+    grid-area: section-2;
+    background-color: red;
+}
+.info-name p{
+    align-items: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.info-iconrigtht{
+    grid-area: section-3; 
+    padding-top: 13.5px;
+    font-size: 18px;
+    text-align: right;
+    margin-right: 10px;
+}
+.message{
+    border:1px solid;
+    padding: 5px;
+    margin-bottom:8px;
+    border-radius: 10px;
+    display: grid;
+}
+
