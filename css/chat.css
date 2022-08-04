@@ -33,6 +33,7 @@ body{
     display: grid;
     grid-template-columns: 400px 1fr;
 }
+/*RIGHT SIDE OF THE CHAT APPLICATION*/
 .rightside{
     background-color:rebeccapurple;/*background image*/
     position: relative;
@@ -78,10 +79,62 @@ body{
     margin-right: 10px;
 }
 .message{
-    border:1px solid;
+    display: grid;
     padding: 5px;
+    border:1px hidden;
     margin-bottom:8px;
     border-radius: 10px;
-    display: grid;
 }
+/*.speech-bubble{
+    width: 120px; 
+    height: 80px; 
+    background: #5ac4ed;
+    position: absolute;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.speech-bubble:before {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #5ac4ed;
+    border-bottom: 13px solid transparent;
+    margin: 13px 0 0 -25px;
+}*/
+.message .right{
+    grid-column: 2/3;
+}
+.message .left{
+    grid-column: 1/2;
+}
+.contact-end{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 0;
+
+    /*Should we add height*/
+}
+.contact-end .fa-face-grin, .contact-end .fa-paperclip, .contact-end .fa-microphone{
+   text-align: center;
+   font-size: 20px; 
+   margin: 3px;
+   border: 1px hidden;
+   background-color: red;
+   border-radius: 50%;
+   padding: 10px;
+}
+.contact-end input[type=text]{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 3px;
+    
+}
+
 
