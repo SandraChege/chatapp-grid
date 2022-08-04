@@ -17,4 +17,5 @@ None discovered.
 HTML, CSS
 
 ### Licenses
+MIT License Copyright (c) 2022 Mwihaki
 
