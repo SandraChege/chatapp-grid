@@ -95,7 +95,6 @@ body{
 }
 /*RIGHT SIDE OF THE CHAT APPLICATION*/
 .rightside{
-    /*background image*/
     position: relative;
 }
 .lefside{
@@ -144,8 +143,9 @@ body{
     padding: 5px;
     border:1px hidden;
     margin-bottom:8px;
-    border-radius: 10px;
+    border-radius: 10px;  
 }
+
 /*.speech-bubble{
     width: 120px; 
     height: 80px; 
@@ -166,11 +166,17 @@ body{
     border-bottom: 13px solid transparent;
     margin: 13px 0 0 -25px;
 }*/
-.message .right{
+.right{
     grid-column: 2/3;
+    width: 35%;
+    margin-left: 500px;
+    border: 1px solid ;
 }
-.message .left{
+.left{
     grid-column: 1/2;
+    width: 35%;
+    border: 1px solid;
+    margin-left: 1px;
 }
 .contact-end{
     width: 100%;
