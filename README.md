@@ -9,6 +9,7 @@ Laptop
 Mobile phone
 
 ### Demo
+The live link to chat application project https://sandrachege.github.io/chatapp-grid/
 
 ### Known bugs
 None discovered.
